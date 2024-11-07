@@ -1,4 +1,5 @@
-import 'package:airlines/features/airlines/presentation/screens/home_screen.dart';
+import 'package:airlines/core/routes/app_router.dart';
+import 'package:airlines/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,9 +12,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Flutter Demo',
-      home: HomeScreen(),
+    return MaterialApp.router(
+      title: AppStrings.appTitle,
+      debugShowCheckedModeBanner: false,
+      routerConfig: AppRouter.router,
     );
   }
 }
