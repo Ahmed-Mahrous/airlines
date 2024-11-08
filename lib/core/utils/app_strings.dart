@@ -11,4 +11,8 @@ class AppStrings {
   static String websiteLabel = 'Website';
   static String endPoint =
       'https://www.kayak.com/h/mobileapis/directory/airlines';
+  static String searchTitle = 'Search';
+  static String settingsTitle = 'Settings';
+  static String searchHint = 'Enter Airline Name';
+  static String darkModeLabel = 'Dark Mode';
 }

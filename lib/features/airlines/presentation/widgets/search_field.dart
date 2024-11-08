@@ -1,4 +1,5 @@
 import 'package:airlines/core/utils/app_colors.dart';
+import 'package:airlines/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 class SearchField extends StatelessWidget {
@@ -21,7 +22,7 @@ class SearchField extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(12)),
             borderSide: BorderSide.none,
           ),
-          hintText: "Enter airline name",
+          hintText: AppStrings.searchHint,
           prefixIcon: const Icon(Icons.search),
         ),
       ),

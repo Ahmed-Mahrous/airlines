@@ -34,7 +34,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 }),
             IconButton(
               icon: const Icon(Icons.settings),
-              onPressed: () {},
+              onPressed: () {
+                GoRouter.of(context).push(AppRouter.kSettingsScreen);
+              },
             ),
           ],
           centerTitle: true,
