@@ -1,6 +1,5 @@
 import 'package:airlines/core/utils/app_assets.dart';
 import 'package:airlines/core/utils/app_colors.dart';
-import 'package:airlines/core/utils/screen_utils.dart';
 import 'package:airlines/features/airlines/presentation/widgets/airline_card.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +14,6 @@ class _AirlinesSectionState extends State<AirlinesSection> {
   bool isFav = false;
   @override
   Widget build(BuildContext context) {
-    var height = ScreenUtils.getScreenHeight(context);
     return GridView.builder(
       scrollDirection: Axis.vertical,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

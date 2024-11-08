@@ -9,4 +9,6 @@ class AppStrings {
   static String contactInfoLabel = 'Contact Info';
   static String phoneLabel = 'Phone';
   static String websiteLabel = 'Website';
+  static String endPoint =
+      'https://www.kayak.com/h/mobileapis/directory/airlines';
 }
