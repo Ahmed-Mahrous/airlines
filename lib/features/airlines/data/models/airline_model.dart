@@ -7,7 +7,7 @@ class AirlineModel extends Equatable {
   final String? website;
   final bool? isFav;
 
-  AirlineModel(
+  const AirlineModel(
       {required this.name,
       required this.logo,
       required this.phone,

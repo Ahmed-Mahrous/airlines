@@ -38,6 +38,7 @@ dependencies:
   go_router: ^14.4.1
   flutter_svg: ^2.0.14
   equatable: ^2.0.5
+  dartz: ^0.10.1
 
 dev_dependencies:
   flutter_test:
