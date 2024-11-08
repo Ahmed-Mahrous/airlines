@@ -3,7 +3,8 @@ import 'package:airlines/features/airlines/presentation/manager/cubit/airlines_c
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AirlinesCubit extends Cubit<AirlinesCubitStates> {
-  AirlinesCubit(super.initialState, this.airlineRepo);
+  AirlinesCubit(this.airlineRepo) : super(AirlinesInitial());
+
   final AirlineRepo airlineRepo;
   Future<void> getAirlines() async {
     emit(AirlinesLoading());

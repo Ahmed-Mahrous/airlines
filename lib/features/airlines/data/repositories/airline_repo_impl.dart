@@ -8,7 +8,7 @@ import 'package:dio/dio.dart';
 
 class AirlineRepoImpl implements AirlineRepo {
   final ApiService apiService;
-  AirlineRepoImpl({required this.apiService});
+  AirlineRepoImpl(this.apiService);
   @override
   Future<Either<Failure, List<AirlineModel>>> fetchAirLines() async {
     try {
