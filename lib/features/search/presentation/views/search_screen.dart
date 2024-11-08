@@ -1,6 +1,6 @@
 import 'package:airlines/core/utils/app_strings.dart';
-import 'package:airlines/features/airlines/presentation/widgets/search_field.dart';
-import 'package:airlines/features/search/presentation/widgets/search_card.dart';
+import 'package:airlines/features/airlines/presentation/views/widgets/search_field.dart';
+import 'package:airlines/features/search/presentation/views/widgets/search_card.dart';
 import 'package:flutter/material.dart';
 
 class SearchScreen extends StatelessWidget {

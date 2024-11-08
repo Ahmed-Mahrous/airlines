@@ -1,7 +1,7 @@
-import 'package:airlines/features/airlines/presentation/screens/airline_details.dart';
-import 'package:airlines/features/airlines/presentation/screens/home_screen.dart';
-import 'package:airlines/features/search/presentation/screens/search_screen.dart';
-import 'package:airlines/features/settings/presentation/settings_screen.dart';
+import 'package:airlines/features/airlines/presentation/views/airline_details.dart';
+import 'package:airlines/features/airlines/presentation/views/home_screen.dart';
+import 'package:airlines/features/search/presentation/views/search_screen.dart';
+import 'package:airlines/features/settings/presentation/views/settings_screen.dart';
 import 'package:airlines/features/splash/persentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 

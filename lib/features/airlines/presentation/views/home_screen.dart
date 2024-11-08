@@ -1,8 +1,8 @@
 import 'package:airlines/core/routes/app_router.dart';
 import 'package:airlines/core/utils/app_assets.dart';
 import 'package:airlines/core/utils/app_strings.dart';
-import 'package:airlines/features/airlines/presentation/widgets/airlines_section.dart';
-import 'package:airlines/features/airlines/presentation/widgets/more_options_section.dart';
+import 'package:airlines/features/airlines/presentation/views/widgets/airlines_section.dart';
+import 'package:airlines/features/airlines/presentation/views/widgets/more_options_section.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';

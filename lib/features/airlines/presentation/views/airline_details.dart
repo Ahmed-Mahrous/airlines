@@ -1,6 +1,6 @@
 import 'package:airlines/core/utils/app_strings.dart';
-import 'package:airlines/features/airlines/presentation/widgets/contact_info_card.dart';
-import 'package:airlines/features/airlines/presentation/widgets/details_card.dart';
+import 'package:airlines/features/airlines/presentation/views/widgets/contact_info_card.dart';
+import 'package:airlines/features/airlines/presentation/views/widgets/details_card.dart';
 import 'package:flutter/material.dart';
 
 class AirlineDetailsScreen extends StatefulWidget {

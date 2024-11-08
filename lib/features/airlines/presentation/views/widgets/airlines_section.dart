@@ -1,6 +1,6 @@
 import 'package:airlines/core/utils/app_assets.dart';
 import 'package:airlines/core/utils/app_colors.dart';
-import 'package:airlines/features/airlines/presentation/widgets/airline_card.dart';
+import 'package:airlines/features/airlines/presentation/views/widgets/airline_card.dart';
 import 'package:flutter/material.dart';
 
 class AirlinesSection extends StatefulWidget {
