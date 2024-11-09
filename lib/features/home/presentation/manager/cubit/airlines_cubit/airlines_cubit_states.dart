@@ -1,4 +1,4 @@
-import 'package:airlines/features/airlines/data/models/airline_model.dart';
+import 'package:airlines/features/home/data/models/airline_model.dart';
 import 'package:equatable/equatable.dart';
 
 class AirlinesCubitStates extends Equatable {

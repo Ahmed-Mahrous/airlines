@@ -1,11 +1,12 @@
 import 'package:airlines/core/utils/app_strings.dart';
-import 'package:airlines/features/airlines/presentation/views/widgets/contact_info_card.dart';
-import 'package:airlines/features/airlines/presentation/views/widgets/details_card.dart';
+import 'package:airlines/features/details/presentation/views/widgets/contact_info_card.dart';
+import 'package:airlines/features/details/presentation/views/widgets/details_card.dart';
+import 'package:airlines/features/home/data/models/airline_model.dart';
 import 'package:flutter/material.dart';
 
 class AirlineDetailsScreen extends StatefulWidget {
-  const AirlineDetailsScreen({super.key});
-
+  const AirlineDetailsScreen({super.key, required this.airline});
+  final AirlineModel airline;
   @override
   State<AirlineDetailsScreen> createState() => _AirlineDetailsScreenState();
 }
@@ -19,7 +20,9 @@ class _AirlineDetailsScreenState extends State<AirlineDetailsScreen> {
         body: Padding(
             padding: const EdgeInsets.all(15.0),
             child: Column(children: [
-              const DetailsCard(),
+              DetailsCard(
+                airline: widget.airline,
+              ),
               const SizedBox(
                 height: 15,
               ),
@@ -34,7 +37,9 @@ class _AirlineDetailsScreenState extends State<AirlineDetailsScreen> {
               const SizedBox(
                 height: 15,
               ),
-              const ContactInfoCard()
+              ContactInfoCard(
+                airline: widget.airline,
+              )
             ])));
   }
 }

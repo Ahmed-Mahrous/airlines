@@ -1,5 +1,6 @@
-import 'package:airlines/features/airlines/presentation/views/airline_details.dart';
-import 'package:airlines/features/airlines/presentation/views/home_screen.dart';
+import 'package:airlines/features/details/presentation/views/airline_details.dart';
+import 'package:airlines/features/home/data/models/airline_model.dart';
+import 'package:airlines/features/home/presentation/views/home_screen.dart';
 import 'package:airlines/features/search/presentation/views/search_screen.dart';
 import 'package:airlines/features/settings/presentation/views/settings_screen.dart';
 import 'package:airlines/features/splash/persentation/views/splash_view.dart';
@@ -23,7 +24,9 @@ abstract class AppRouter {
       ),
       GoRoute(
         path: kDetailsScreen,
-        builder: (context, state) => const AirlineDetailsScreen(),
+        builder: (context, state) => AirlineDetailsScreen(
+          airline: state.extra as AirlineModel,
+        ),
       ),
       GoRoute(
         path: kSearchScreen,
