@@ -16,4 +16,5 @@ class AppStrings {
   static String searchHint = 'Enter Airline Name';
   static String darkModeLabel = 'Dark Mode';
   static String noFavYet = 'YOU HAVE NO FAVOURITE AIRLINES YET';
+  static String hiveBoxName = 'airlineBox';
 }

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class SettingsScreen extends StatelessWidget {
-  SettingsScreen({super.key});
+  const SettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

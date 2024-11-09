@@ -18,11 +18,11 @@ void main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(AirlineModelAdapter()); // Register the adapter
   getItSetup();
-  await Hive.openBox<AirlineModel>('airlineBox');
+  await Hive.openBox<AirlineModel>(AppStrings.hiveBoxName);
   runApp(
     ChangeNotifierProvider(
       create: (context) => themeProvider,
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }
@@ -33,7 +33,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    final themeProvider = Provider.of<ThemeProvider>(context);
     return MultiBlocProvider(
       providers: [
         BlocProvider(

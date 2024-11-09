@@ -1,6 +1,5 @@
 import 'package:airlines/core/utils/app_colors.dart';
 import 'package:airlines/core/widgets/failure_widget.dart';
-import 'package:airlines/features/home/data/models/airline_model.dart';
 import 'package:airlines/features/home/presentation/manager/cubit/airlines_cubit/airlines_cubit.dart';
 import 'package:airlines/features/home/presentation/manager/cubit/airlines_cubit/airlines_cubit_states.dart';
 import 'package:airlines/features/home/presentation/views/widgets/airline_card.dart';
@@ -16,7 +15,6 @@ class AirlinesSection extends StatefulWidget {
 class _AirlinesSectionState extends State<AirlinesSection> {
   @override
   Widget build(BuildContext context) {
-    final airlinesCubit = context.read<AirlinesCubit>();
     return BlocBuilder<AirlinesCubit, AirlinesCubitStates>(
       builder: (context, state) {
         if (state is AirlinesLoaded) {

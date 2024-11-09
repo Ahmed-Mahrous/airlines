@@ -22,7 +22,7 @@ class _FavAirlinesSectionState extends State<FavAirlinesSection> {
     super.initState();
     // Subscribe to the cubit's state stream to listen to updates
     subscription = context.read<FavCubit>().stream.listen((state) {
-      print("State changed: $state"); // Log state changes to console
+      // Log state changes to console
     });
   }
 
