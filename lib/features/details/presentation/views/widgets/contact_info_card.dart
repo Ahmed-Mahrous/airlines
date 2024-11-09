@@ -92,8 +92,10 @@ class ContactInfoCard extends StatelessWidget {
                           }
                         },
                         child: Text(
+                          maxLines: 1,
                           airline.website,
-                          style: const TextStyle(fontSize: 16),
+                          style: const TextStyle(fontSize: 14),
+                          overflow: TextOverflow.ellipsis,
                         ),
                       ),
                     ],

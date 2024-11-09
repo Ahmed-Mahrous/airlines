@@ -1,18 +1,15 @@
+import 'package:airlines/core/theme_provider/theme_provider.dart';
 import 'package:airlines/core/utils/app_colors.dart';
 import 'package:airlines/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-class SettingsScreen extends StatefulWidget {
-  const SettingsScreen({super.key});
+class SettingsScreen extends StatelessWidget {
+  SettingsScreen({super.key});
 
-  @override
-  State<SettingsScreen> createState() => _SettingsScreenState();
-}
-
-class _SettingsScreenState extends State<SettingsScreen> {
-  bool currentValue = false;
   @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -28,11 +25,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     fontSize: 20.0, fontWeight: FontWeight.w500)),
             const Spacer(),
             Switch(
-              value: currentValue,
+              value: themeProvider.isDarkMode,
               onChanged: (value) {
-                setState(() {
-                  currentValue = value;
-                });
+                themeProvider.toggleTheme(value);
               },
               activeColor: AppColors.mainColor,
             ),

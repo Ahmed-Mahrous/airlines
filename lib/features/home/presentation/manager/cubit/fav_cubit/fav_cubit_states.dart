@@ -18,4 +18,17 @@ class FavListRemoved extends FavCubitStates {
   FavListRemoved({required this.favList});
 }
 
-class FavListUpdated extends FavCubitStates {}
+class FavListUpdated extends FavCubitStates {
+  final List<AirlineModel> favList;
+  FavListUpdated({required this.favList});
+}
+
+class CachedFavListLoaded extends FavCubitStates {
+  final List<AirlineModel> favList;
+  CachedFavListLoaded({required this.favList});
+}
+
+class FavListCached extends FavCubitStates {
+  final List<AirlineModel> favList;
+  FavListCached({required this.favList});
+}
