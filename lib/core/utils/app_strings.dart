@@ -1,5 +1,5 @@
 class AppStrings {
-  static String appTitle = 'AirLines';
+  static String appTitle = 'AirlineBook';
   static String splashTitle = 'DISCOVER AIRLINES';
   static String allLabel = 'All Airlines';
   static String favLabel = 'Favourites';
