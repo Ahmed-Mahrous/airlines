@@ -12,23 +12,19 @@
 ## Architecture
 
 This application is developed using the **Model-View-ViewModel (MVVM)** pattern to maintain a clean, structured, and testable codebase.
-
+The app uses **flutter_bloc** for state management and implements **dependency injection** with `get_it` to manage dependencies effectively.
 ## Packages Used
 
 | Package          | Purpose                                                                                                                                                             |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `go_router`      | Used for routing and navigation throughout the app, making it easier to manage screen transitions.                                                                  |
-| `equatable`      | Helps in implementing equality for Dart objects, which is useful for comparing state changes in the app.                                                           |
+| `equatable`      | Used for implementing equality in the `AirlineModel`, ensuring that the airline objects are compared properly.                                                          |
 | `dio`            | Used for making network requests to fetch airline data. `dio` provides a flexible and efficient way to handle API requests.                                        |
 | `flutter_bloc`   | Manages state across the app with a reactive approach, simplifying complex state management and improving app performance.                                          |
 | `get_it`         | Implements dependency injection, allowing for a clean separation of dependencies and easier management of services within the app.                                  |
 | `url_launcher`   | Enables opening external URLs, such as airline websites, directly from the app.                                                                                     |
 | `hive`           | Provides lightweight local storage for caching airline data, allowing offline access and reducing the need for repeated API calls.                                  |
 | `shared_preferences` | Stores user preferences, such as theme mode selection, persistently, so the app remembers the user’s choice between light and dark mode on relaunch.           |
-
-## Development Process
-
-The app follows best practices in Flutter development with MVVM architecture and state management using `flutter_bloc`. Dependency injection with `get_it` ensures modular and easily testable code.
 
 ## Demo
 
