@@ -37,7 +37,7 @@ class _AirlinesSectionState extends State<AirlinesSection> {
             },
           );
         } else if (state is AirlinesError) {
-          return FailureWidget(error: state.message);
+          return Center(child: FailureWidget(error: state.message));
         } else {
           return const Center(
               child: CircularProgressIndicator(
