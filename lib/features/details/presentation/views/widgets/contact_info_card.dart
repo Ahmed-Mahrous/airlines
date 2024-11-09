@@ -1,3 +1,4 @@
+import 'package:airlines/core/uri_launcher/uri_launcher.dart';
 import 'package:airlines/core/utils/app_colors.dart';
 import 'package:airlines/core/utils/app_strings.dart';
 import 'package:airlines/features/home/data/models/airline_model.dart';
@@ -38,14 +39,8 @@ class ContactInfoCard extends StatelessWidget {
                         height: 5,
                       ),
                       TextButton(
-                        onPressed: () async {
-                          if (airline.phone != "Not Available") {
-                            final Uri uri = Uri(
-                              scheme: 'tel',
-                              path: airline.phone,
-                            );
-                            await launchUrl(uri);
-                          }
+                        onPressed: () {
+                          UriLauncher.openUrlonPhone(airline.phone);
                         },
                         child: Text(
                           airline.phone,
@@ -83,13 +78,8 @@ class ContactInfoCard extends StatelessWidget {
                         height: 5,
                       ),
                       TextButton(
-                        onPressed: () async {
-                          if (airline.website != "Not Available") {
-                            Uri uri = Uri.parse(airline.website);
-                            if (!await launchUrl(uri)) {
-                              throw Exception('Could not launch $uri');
-                            }
-                          }
+                        onPressed: () {
+                          UriLauncher.openUrlonBrowser(airline.website);
                         },
                         child: Text(
                           maxLines: 1,
